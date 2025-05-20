@@ -24,6 +24,7 @@ export default function TodoList({ user }) {
   const todosRef = collection(db, "users", user.uid, "todos");
 
   useEffect(() => {
+    const todosRef = collection(db, "users", user.uid, "todos");
     const q = query(todosRef);
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const items = snapshot.docs.map((doc) => ({
@@ -33,7 +34,8 @@ export default function TodoList({ user }) {
       setTodos(items);
     });
     return () => unsubscribe();
-  }, []);
+  }, [user.uid]);
+
 
   const addTodo = async () => {
     if (newTodo.trim() === "") return;
