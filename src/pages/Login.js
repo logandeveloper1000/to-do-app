@@ -36,7 +36,7 @@ export default function Login() {
 
   return (
     <div>
-      <h1 className="app-title">To Do List App</h1>
+      <h1 className="app-title">To Do App</h1>
       <div className="auth-container">
         <h2>Log In</h2>
         <form onSubmit={handleLogin}>
