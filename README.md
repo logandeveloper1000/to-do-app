@@ -5,7 +5,7 @@ This is a full-featured, responsive To-Do List application built with React and 
 ## Live Demo
 
 You can view the live project at:  
-https://logan-to-do-app.netlify.app/
+https://user-to-do-app.netlify.app/
 
 ## Features
 
